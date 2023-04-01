@@ -70,7 +70,7 @@ int main() {
 
 			/* 如果 两个缓冲区和文件都已经打开了*/
 			append(fs, fa);
-
+			/* fs 是源文件，fa是目标文件 把fs文件内容，追加到fa文件*/
 			/*完成后关闭文件流*/
 			if (ferror(fs) != 0) {
 				fprintf(stderr,"error in reading file \"%s \"\n" , file_src);
